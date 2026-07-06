@@ -53,3 +53,17 @@ cd Mini-Vlog-App
 npm install
 npm run dev
 ```
+
+## Learning Concepts Practiced
+
+- useState
+- useEffect
+- fetch API
+- map
+- filter
+- props
+- component splitting
+- React Router
+- dynamic routes
+- useParams
+- loading and error handling
