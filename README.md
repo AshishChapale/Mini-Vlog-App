@@ -28,3 +28,28 @@ Posts are fetched from:
 
 - JSONPlaceholder API:
 https://jsonplaceholder.typicode.com/posts
+
+## Project Structure
+
+```txt
+src/
+  components/
+    Navbar.jsx
+    PostList.jsx
+    PostItem.jsx
+  pages/
+    Home.jsx
+    About.jsx
+    PostDetails.jsx
+  App.jsx
+  App.css
+```
+
+## How to Run Locally
+
+```bash
+git clone https://github.com/AshishChapale/Mini-Vlog-App.git
+cd Mini-Vlog-App
+npm install
+npm run dev
+```
