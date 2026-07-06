@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import PostList from "../components/PostList";
+
 
 function Home() {
   const [posts, setPosts] = useState([]);
@@ -30,10 +31,10 @@ function Home() {
 
     fetchPosts();
   }, []);
-
-  const filteredPosts = posts.filter((post) =>
+    const filteredPosts = posts.filter((post) =>
     post.title.toLowerCase().includes(search.toLowerCase())
   );
+ <PostList posts={filteredPosts} />
 
   if (loading) {
     return <h2>Loading posts...</h2>;
@@ -56,14 +57,15 @@ function Home() {
 
       {filteredPosts.length === 0 && <p>No posts found</p>}
 
-      {filteredPosts.map((post) => (
+      {/* {filteredPosts.map((post) => (
         <div key={post.id}>
           <h2>
             <Link to={`/post/${post.id}`}>{post.title}</Link>
           </h2>
           <p>{post.body}</p>
         </div>
-      ))}
+      ))} */}
+      <PostList posts={filteredPosts} />
     </div>
   );
 }
