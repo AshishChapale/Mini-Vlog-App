@@ -1,7 +1,11 @@
 # Mini Blog App
 
-A React mini blog-style app built with React Router and API fetching.  
+A React mini blog app built with React Router and API fetching.  
 Users can view posts, search posts by title, and open a single post details page.
+
+## Live Demo
+
+https://mini-blog-81br14iet-ashishchapale8076-6920s-projects.vercel.app
 
 ## Features
 
@@ -26,8 +30,9 @@ Users can view posts, search posts by title, and open a single post details page
 
 Posts are fetched from:
 
-- JSONPlaceholder API:
+```txt
 https://jsonplaceholder.typicode.com/posts
+```
 
 ## Project Structure
 
@@ -45,9 +50,14 @@ src/
   App.css
 ```
 
-## Live Demo
+## How to Run Locally
 
-https://mini-blog-81br14iet-ashishchapale8076-6920s-projects.vercel.app
+```bash
+git clone https://github.com/AshishChapale/Mini-Blog-App.git
+cd Mini-Blog-App
+npm install
+npm run dev
+```
 
 ## Learning Concepts Practiced
 
@@ -62,3 +72,4 @@ https://mini-blog-81br14iet-ashishchapale8076-6920s-projects.vercel.app
 - dynamic routes
 - useParams
 - loading and error handling
+- Vercel deployment
